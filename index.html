@@ -2,7 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>密碼亂數表產生器</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/seedrandom.js"></script>
 <style>
@@ -13,9 +18,15 @@
 </style>
 </head>
 <body>
+<div class="container">
+  <div class="jumbotron">
+<h4>
+輸入亂數表的編號：<input type="text" id="txtSeed" value="" />
+&nbsp;<input type="button" id="btnGo" value="產生亂數表" class="btn btn-success" />
 
-請輸入亂數表的編號：<input type="text" id="txtSeed" value="1234" />
-&nbsp;<input type="button" id="btnGo" value="產生亂數表" />
+
+<input type="button" value="說明事項" class="btn-warning btn-md" onclick="https://lab0001-livevil404.c9users.io/hw-html-password-livEVlL/readme.html"></a>
+</h4>
 
 <div id="randomTable">
 </div>
@@ -42,6 +53,7 @@ $("#btnGo").click(function () {
 		}
 		result += sLine + "<br>";
 	}
+	
 	$("#randomTable").html(result);
 });
 
